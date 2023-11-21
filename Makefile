@@ -22,7 +22,7 @@ clean-api:
 
 clean:
 	make clean-build
-	make clean-api
+	#make clean-api
 
 api:
 	cd compiler/api && ../../$(PYTHON) compiler.py
