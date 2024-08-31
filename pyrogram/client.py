@@ -586,16 +586,6 @@ class Client(Methods):
 
                 self.dispatcher.updates_queue.put_nowait((update, users, chats))
         elif isinstance(updates, (raw.types.UpdateShortMessage, raw.types.UpdateShortChatMessage)):
-            await self.storage.update_state(
-                (
-                    0,
-                    updates.pts,
-                    None,
-                    updates.date,
-                    None
-                )
-            )
-
             diff = await self.invoke(
                 raw.functions.updates.GetDifference(
                     pts=updates.pts - updates.pts_count,
