@@ -159,6 +159,9 @@ class Chat(Object):
 
         background_emoji_id (``int``, *optional*)
             Chat background emoji id.
+
+        birthday (:obj:`~pyrogram.types.Birthday`, *optional*):
+            User Date of birth.
     """
 
     def __init__(
