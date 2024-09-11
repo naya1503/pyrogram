@@ -43,13 +43,14 @@ from .video_chat_ended import VideoChatEnded
 from .video_chat_members_invited import VideoChatMembersInvited
 from .video_chat_scheduled import VideoChatScheduled
 from .video_chat_started import VideoChatStarted
-
+from .birthday import Birthday
 __all__ = [
     "Chat",
     "ChatMember",
     "ChatPermissions",
     "ChatPhoto",
     "ChatPreview",
+    "Birthday",
     "Dialog",
     "PeerChannel",
     "PeerUser",
