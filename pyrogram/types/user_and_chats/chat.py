@@ -205,6 +205,7 @@ class Chat(Object):
         available_reactions: Optional["types.ChatReactions"] = None,
         color: int = None,
         background_emoji_id: int = None
+        birthday: "types.Birthday" = None
     ):
         super().__init__(client)
 
@@ -245,6 +246,7 @@ class Chat(Object):
         self.available_reactions = available_reactions
         self.color = color
         self.background_emoji_id = background_emoji_id
+        self.birthday = birthday
 
     @staticmethod
     def _parse_user_chat(client, user: raw.types.User) -> "Chat":
