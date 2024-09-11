@@ -431,8 +431,6 @@ class Chat(Object):
 
     @property
     def full_name(self) -> str:
-        birthday = getattr(full_user, "birthday", None)
-            parsed_chat.birthday = types.Birthday._parse(birthday) if birthday is not None else None
         return " ".join(filter(None, [self.first_name, self.last_name])) or None
 
     async def archive(self):
